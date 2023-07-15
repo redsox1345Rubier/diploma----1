@@ -101,8 +101,6 @@ body {
 .movie .movie__info {
   display: flex;
 }
-
-
 .movie .movie__poster {
   position: relative;
   width: 12.5rem;
@@ -127,19 +125,6 @@ body {
   border-right: 0 solid transparent;
   border-left: 0.7rem solid #772720;
 }
-@media (max-width: 320px) {
-  .movie__info {
-    flex-direction: column;
-    }
-    .page-nav  {
-      
-      flex-wrap: wrap;
-    }
-    .page-nav__day {
-      flex-grow: 1;
-    }
-  }
-
 .movie .movie__description {
   flex-grow: 1;
   padding-left: 1.5rem;
