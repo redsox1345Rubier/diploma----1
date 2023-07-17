@@ -25,7 +25,7 @@ if (response) {
 	let ticketStart = document.querySelector('span.ticket__start');
 	ticketStart.innerText = Fuck.seanceTime;
 	let ticketCost = document.querySelector('span.ticket__cost');
-	let ticketCostText = Fuck.places.reduce((ticketsSum, place) => ticketsSum + place.price, 0);
+	let ticketCostText = Fuck.places.reduce((ticketsSum, place) => ticketsSum + Number(place.price), 0);
 	ticketCost.innerText = ticketCostText
 	let acceptinButton = document.querySelector('button.acceptin-button');
 	acceptinButton.addEventListener('click', (e) => {
