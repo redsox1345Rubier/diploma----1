@@ -44,7 +44,7 @@ for (let i = 0; i < Allplaces.length; i++) {
 			const placeData = {
 				numberRow: confStepWrapperArr.indexOf(row) + 1,
 				numberPlace: places.indexOf(target) + 1,
-				price: target.classList.contains('conf-step__chair_standart') ? 250 : 350
+				price: target.classList.contains('conf-step__chair_standart') ?  Ud.hallPriceStandart : Ud.hallPriceVip
 			}
 
 			if (target.classList.contains('conf-step__chair_selected')) {
@@ -59,6 +59,10 @@ for (let i = 0; i < Allplaces.length; i++) {
 	}
 }
 
+let spanPriceStandart = document.querySelector('span.price-standart');
+spanPriceStandart.innerText = Ud.hallPriceStandart;
+let spanPriceVip = document.querySelector('span.price-vip');
+spanPriceVip.innerText = Ud.hallPriceVip;
 
 function checkChairs() {
 	const selectedChairs = document.querySelectorAll('span.conf-step__chair_selected');
