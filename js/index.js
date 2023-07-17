@@ -145,7 +145,9 @@ async function renderMain() {
 							filmName: film.film_name,
 							hallName: halls[t].hall_name,
 							seanceTime: hallSeances[j].seance_time,
-							hallConfig: halls[t].hall_config
+							hallConfig: halls[t].hall_config,
+							hallPriceStandart: halls[t].hall_price_standart,
+							hallPriceVip: halls[t].hall_price_vip,
 						}
 						localStorage.setItem('ud', JSON.stringify(data))
 					})
